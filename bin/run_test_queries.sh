@@ -1,0 +1,1 @@
+python3 src/client/multi_client.py data/test_queries.csv 4
