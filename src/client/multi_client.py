@@ -23,7 +23,7 @@ def map_reduce( map_fn, reduce_fn, in_list, stages=None, progress=None, cpu_coun
 
 def client(query):    
     start = time.time()
-    URL_master = "http://0.0.0.0:8000/"
+    URL_master = "http://localhost:8000/"
     query_return = requests.get(f"{URL_master}get_query", params={"query":query[0]}).json()
     promt = query_return["promt"]
     end = time.time()
@@ -53,6 +53,7 @@ def main():
     data = map_reduce(client,combine_lists,queries, cpu_count=workers)
           
     average_response_time = sum(d[1] for d in data)/len(data)
+    print("time", data)
     print("average_response_time", average_response_time)
 
 if __name__ == "__main__":
