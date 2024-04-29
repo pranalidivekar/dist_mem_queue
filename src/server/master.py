@@ -4,7 +4,9 @@ import random as rn
 from contextlib import asynccontextmanager
 import asyncio
 import uvicorn
+from distributed import Client
 
+# client = Client()
 
 urls = [
     "http://localhost:6001/",
@@ -27,7 +29,7 @@ def get_executable():
            query_return = json_query
            return_url = url
     if query_return:
-        requests.get(f"{return_url}pop_query")
+        requests.post(f"{return_url}pop_query",params={"id":query_return["id"]})
     return query_return
 
 async def run_query(s):     
@@ -43,7 +45,7 @@ async def run_query(s):
 async def lifespan(app: FastAPI):
     
     # Load the ML model
-    asyncio.create_task(run_query(1))
+    asyncio.create_task(run_query(0.1))
     yield
     # Run on shutdown (if required)
     print('Shutting down...')
@@ -82,7 +84,7 @@ async def get_query(query:str = ""):
     resp = requests.post(f"{url}put_query",params={"query":query,"id":id_query})    
     response_dict = resp.json()
     while not id_query in app.results_set:        
-        await asyncio.sleep(1)        
+        await asyncio.sleep(0.1)    
     response_dict["url_slave"] = url
     response_dict["promt"] = app.results_set[id_query]
     return response_dict

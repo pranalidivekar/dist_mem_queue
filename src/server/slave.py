@@ -92,11 +92,16 @@ async def put_query(query: str = "", id: str = ""):
     return query_object.to_dict()
 
 
-@app.get("/pop_query")
-async def pop_query():
+@app.post("/pop_query")
+async def pop_query(id: str = ""):
     if len(app.queries) == 0:
         return None
-    return app.queries.pop().to_dict()
+    deleted = None
+    for i in app.queries:
+        deleted = i
+        app.queries.remove(i)
+        break
+    return deleted.to_dict()
 
 
 @app.get("/get_top_query")

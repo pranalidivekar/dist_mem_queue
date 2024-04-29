@@ -13,5 +13,6 @@ else
     pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 	pip install -r requirements.txt	
     python3 bin/get_tokenizer.py
+	python -m pip install dask distributed #dask-2024.4.2-py3-none-any.whl.metadata
 	conda deactivate
 fi
