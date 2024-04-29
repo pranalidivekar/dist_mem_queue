@@ -25,10 +25,10 @@ class Query():
     def __lt__(self, other):
         return self.weight < other.weight
 
-    def to_dict(self):
+    def to_dict(self):        
         return {
             "query": self.query,
-            "weight": self.weight,
+            "weight": self.weight.item(),
             "added_at": self.added_at,
             "id": self.id
         }
@@ -67,7 +67,7 @@ def predict_execution_time(input_sentence, word2vec_model, linear_regression_mod
 
 def compute_time(query: str):
     # input_sentence = "Example input sentence"
-    data = pd.read_csv('query_execution_time.csv')
+    data = pd.read_csv('data/query_execution_time.csv')
     # Tokenize sentences
     tokenized_sentences = [word_tokenize(sentence.lower()) for sentence in data['Sentence']]
     word2vec_model = gensim.models.Word2Vec(tokenized_sentences, vector_size=6, window=2, min_count=1, epochs=10)

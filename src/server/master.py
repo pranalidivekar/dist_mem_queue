@@ -79,8 +79,8 @@ async def root():
 async def get_query(query:str = ""):
     id_query = str(rn.randint(0,100000))
     url = get_url_candidate()
-    resp = requests.post(f"{url}put_query",params={"query":query,"id":id_query})
-    response_dict = resp.json()    
+    resp = requests.post(f"{url}put_query",params={"query":query,"id":id_query})    
+    response_dict = resp.json()
     while not id_query in app.results_set:        
         await asyncio.sleep(1)        
     response_dict["url_slave"] = url
