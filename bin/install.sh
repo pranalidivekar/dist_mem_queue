@@ -12,6 +12,6 @@ else
 	conda activate dist_mem_queue
     pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 	pip install -r requirements.txt	
-    python3 get_tokenizer.py
+    python3 bin/get_tokenizer.py
 	conda deactivate
 fi
