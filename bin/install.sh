@@ -18,6 +18,11 @@ else
 	conda activate dist_mem_queue
     pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
 	pip install -r requirements.txt	
+<<<<<<< HEAD
     python bin/get_tokenizer.py
+=======
+    python3 bin/get_tokenizer.py
+	python -m pip install dask distributed #dask-2024.4.2-py3-none-any.whl.metadata
+>>>>>>> 650693fdd4c97c6384e5df6dd2b3dd25dc44ce24
 	conda deactivate
 fi
