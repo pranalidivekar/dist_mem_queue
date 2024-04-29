@@ -1,0 +1,101 @@
+query, response_time
+'The cat jumped over the lazy dog.', 20.609488010406494 
+'Today is a beautiful day.', 1.0354177951812744 
+'I love to travel and explore new places.', 26.824772596359253 
+'Happiness is a choice.', 3.33988356590271 
+'Music soothes the soul.', 2.64988374710083 
+"Life is what happens when you're busy making other plans.", 23.628188133239746 
+'Laughter is the best medicine.', 1.9490771293640137 
+"Time flies when you're having fun.", 24.380516052246094 
+'Life is a journey  not a destination.', 4.006495475769043 
+"Believe you can and you're halfway there.", 25.127654314041138 
+'Live as if you were to die tomorrow.', 21.335068464279175 
+"Believe you can and you're halfway there.", 25.127654314041138 
+'Live as if you were to die tomorrow.', 21.335068464279175 
+'Live as if you were to die tomorrow.', 21.335068464279175 
+"In the end  we only regret the chances we didn't take.", 28.297962427139282 
+'Strive not to be a success  but rather to be of value', 25.870293617248535 
+'Life is about making an impact  not making an income.', 22.073746919631958 
+'To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.', 22.82411813735962 
+"Life isn't about finding yourself. Life is about creating yourself.", 26.000739097595215 
+"Don't cry because it's over  smile because it happened.", 3.676785945892334 
+'Success is not the key to happiness. Happiness is the key to success.', 3.4514870643615723 
+'The only way to predict the future is to create it.', 3.4539942741394043 
+'Every accomplishment starts with the decision to try.', 3.4704434871673584 
+'It is never too late to be what you might have been.', 22.85996985435486 
+'The only true wisdom is in knowing you know nothing.', 2.7893621921539307 
+'Dream big and dare to fail.', 2.7919108867645264 
+'The only place where success comes before work is in the dictionary.', 2.7842278480529785 
+"Success is not the absence of failure; it's the persistence through failure.", 2.7688775062561035 
+'The biggest risk is not taking any risk.', 2.7449560165405273 
+'You are never too old to set another goal or to dream a new dream.', 2.7184102535247803 
+'You are braver than you believe, stronger than you seem, and smarter than you think.', 2.7066726684570312 
+'Everything you can imagine is real.', 2.715200662612915 
+'Life is not about waiting for the storm to pass, but learning to dance in the rain.', 2.8007335662841797 
+"Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.", 2.889272451400757 
+"Your time is limited, don't waste it living someone else's life.", 2.9796745777130127 
+'The future belongs to those who believe in the beauty of their dreams.', 3.814357042312622 
+"Your limitation�it's only your imagination.", 3.4418179988861084 
+'What you get by achieving your goals is not as important as what you become by achieving your goals.', 3.813009738922119 
+'Be the change that you wish to see in the world.', 3.810253143310547 
+'Happiness is not by chance, but by choice.', 3.0375876426696777 
+'Success is not the key to happiness. Happiness is the key to success.', 3.4514870643615723 
+'The only way to predict the future is to create it.', 3.4539942741394043 
+'Every accomplishment starts with the decision to try.', 3.4704434871673584 
+'It is never too late to be what you might have been.', 22.85996985435486 
+'The only true wisdom is in knowing you know nothing.', 2.7893621921539307 
+'Dream big and dare to fail.', 2.7919108867645264 
+'The only place where success comes before work is in the dictionary.', 2.7842278480529785 
+"Success is not the absence of failure; it's the persistence through failure.", 2.7688775062561035 
+'The biggest risk is not taking any risk.', 2.7449560165405273 
+'You are never too old to set another goal or to dream a new dream.', 2.7184102535247803 
+'You are braver than you believe, stronger than you seem, and smarter than you think.', 2.7066726684570312 
+'Everything you can imagine is real.', 2.715200662612915 
+'Life is not about waiting for the storm to pass, but learning to dance in the rain.', 2.8007335662841797 
+"Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.", 2.889272451400757 
+"Your time is limited, don't waste it living someone else's life.", 2.9796745777130127 
+'The future belongs to those who believe in the beauty of their dreams.', 3.814357042312622 
+"Your limitation�it's only your imagination.", 3.4418179988861084 
+'What you get by achieving your goals is not as important as what you become by achieving your goals.', 3.813009738922119 
+'Be the change that you wish to see in the world.', 3.810253143310547 
+'Happiness is not by chance, but by choice.', 3.0375876426696777 
+'Success is not the key to happiness. Happiness is the key to success.', 3.4514870643615723 
+'The only way to predict the future is to create it.', 3.4539942741394043 
+'Every accomplishment starts with the decision to try.', 3.4704434871673584 
+'It is never too late to be what you might have been.', 22.85996985435486 
+'The only true wisdom is in knowing you know nothing.', 2.7893621921539307 
+'Dream big and dare to fail.', 2.7919108867645264 
+'The only place where success comes before work is in the dictionary.', 2.7842278480529785 
+"Success is not the absence of failure; it's the persistence through failure.", 2.7688775062561035 
+'The biggest risk is not taking any risk.', 2.7449560165405273 
+'You are never too old to set another goal or to dream a new dream.', 2.7184102535247803 
+'You are braver than you believe, stronger than you seem, and smarter than you think.', 2.7066726684570312 
+'Everything you can imagine is real.', 2.715200662612915 
+'Life is not about waiting for the storm to pass, but learning to dance in the rain.', 2.8007335662841797 
+"Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.", 2.889272451400757 
+"Your time is limited, don't waste it living someone else's life.", 2.9796745777130127 
+'The future belongs to those who believe in the beauty of their dreams.', 3.814357042312622 
+"Your limitationit's only your imagination.", 3.8087923526763916 
+'What you get by achieving your goals is not as important as what you become by achieving your goals.', 3.813009738922119 
+'Be the change that you wish to see in the world.', 3.810253143310547 
+'Happiness is not by chance, but by choice.', 3.0375876426696777 
+'Success is not the key to happiness. Happiness is the key to success.', 3.4514870643615723 
+'The only way to predict the future is to create it.', 3.4539942741394043 
+'Every accomplishment starts with the decision to try.', 3.4704434871673584 
+'It is never too late to be what you might have been.', 22.85996985435486 
+'The only true wisdom is in knowing you know nothing.', 2.7893621921539307 
+'Dream big and dare to fail.', 2.7919108867645264 
+'The only place where success comes before work is in the dictionary.', 2.7842278480529785 
+"Success is not the absence of failure; it's the persistence through failure.", 2.7688775062561035 
+'The biggest risk is not taking any risk.', 2.7449560165405273 
+'You are never too old to set another goal or to dream a new dream.', 2.7184102535247803 
+'You are braver than you believe, stronger than you seem, and smarter than you think.', 2.7066726684570312 
+'Everything you can imagine is real.', 2.715200662612915 
+'Life is not about waiting for the storm to pass, but learning to dance in the rain.', 2.8007335662841797 
+"Don't be pushed around by the fears in your mind. Be led by the dreams in your heart.", 2.889272451400757 
+"Your time is limited, don't waste it living someone else's life.", 2.9796745777130127 
+'The future belongs to those who believe in the beauty of their dreams.', 3.814357042312622 
+"Your limitationit's only your imagination.", 3.8087923526763916 
+'What you get by achieving your goals is not as important as what you become by achieving your goals.', 3.813009738922119 
+'Be the change that you wish to see in the world.', 3.810253143310547 
+'Happiness is not by chance, but by choice.', 3.0375876426696777

@@ -42,7 +42,7 @@ def get_weight(query: Query) -> float:
     return query.weight
 
 def train_models():
-    data = pd.read_csv('data/test_queries_2.csv')
+    data = pd.read_csv('data/query_execution_time_training_data.csv')
     tokenized_sentences = [word_tokenize(sentence.lower()) for sentence in data['Sentence']]
     word2vec_model = gensim.models.Word2Vec(tokenized_sentences, vector_size=6, window=2, min_count=1, epochs=10)
     sentence_vectors = np.array([sentence_to_vector(sentence, word2vec_model) for sentence in tokenized_sentences])
@@ -76,11 +76,12 @@ def compute_time(query: str):
     return predicted_time
 
 def predict_execution_time(input_sentence, word2vec_model, linear_regression_model):
-    tokenized_sentence = word_tokenize(input_sentence.lower())
-    sentence_vector = sentence_to_vector(tokenized_sentence, word2vec_model)
-    sentence_vector = sentence_vector.reshape(1, -1)
-    predicted_time = linear_regression_model.predict(sentence_vector)
-    return predicted_time[0]
+    # tokenized_sentence = word_tokenize(input_sentence.lower())
+    # sentence_vector = sentence_to_vector(tokenized_sentence, word2vec_model)
+    # sentence_vector = sentence_vector.reshape(1, -1)
+    # predicted_time = linear_regression_model.predict(sentence_vector)
+    # return predicted_time[0]
+    return np.array([1])
 
 @app.get("/")
 async def root():
@@ -92,14 +93,9 @@ async def put_query(query: str = "", id: str = ""):
     app.queries = insert_query(app.queries, query_object)
     return query_object.to_dict()
 
-<<<<<<< HEAD
-@app.get("/pop_query")
-async def pop_query():
-=======
 
 @app.post("/pop_query")
 async def pop_query(id: str = ""):
->>>>>>> 650693fdd4c97c6384e5df6dd2b3dd25dc44ce24
     if len(app.queries) == 0:
         return None
     deleted = None

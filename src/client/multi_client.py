@@ -12,7 +12,7 @@ def client_call(query):
     query_return = requests.get(f"{URL_master}get_query", params={"query":query[0]}).json()
     promt = query_return["promt"]
     end = time.time()    
-    return [(promt, end-start)]
+    return [(query, end-start)]
 
 def get_queries(in_path):
     with open(in_path) as csvfile:
@@ -41,6 +41,7 @@ def main():
     futures = client.map(client_call, queries)
     # wait(futures)
     data = client.gather(futures)
+    print(data)
     average_response_time = sum(d[0][1] for d in data)/len(data)    
     print("average_response_time", average_response_time)
     print("-----------------------------")
