@@ -22,8 +22,11 @@ def get_queries(in_path):
 
 def main():
     path_queries = sys.argv[1]    
+    num_workers = int(sys.argv[2])
     queries = [i[0] for i in get_queries(path_queries)]
     print("Number of queries: ", len(queries))
+    print("Number of workers: ", num_workers)
+    print()
     #SERIAL
     # time_acum = 0    
 
@@ -33,7 +36,7 @@ def main():
     # average_response_time = time_acum/len(queries)             
 
     #dask
-    client = Client(processes=False, threads_per_worker=int(sys.argv[2]))
+    client = Client(processes=False, threads_per_worker=num_workers)
     
     futures = client.map(client_call, queries)
     # wait(futures)
