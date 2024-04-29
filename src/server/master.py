@@ -4,9 +4,6 @@ import random as rn
 from contextlib import asynccontextmanager
 import asyncio
 import uvicorn
-from distributed import Client
-
-# client = Client()
 
 urls = [
     "http://localhost:6001/",
