@@ -76,12 +76,12 @@ def compute_time(query: str):
     return predicted_time
 
 def predict_execution_time(input_sentence, word2vec_model, linear_regression_model):
-    # tokenized_sentence = word_tokenize(input_sentence.lower())
-    # sentence_vector = sentence_to_vector(tokenized_sentence, word2vec_model)
-    # sentence_vector = sentence_vector.reshape(1, -1)
-    # predicted_time = linear_regression_model.predict(sentence_vector)
-    # return predicted_time[0]
-    return np.array([1])
+    tokenized_sentence = word_tokenize(input_sentence.lower())
+    sentence_vector = sentence_to_vector(tokenized_sentence, word2vec_model)
+    sentence_vector = sentence_vector.reshape(1, -1)
+    predicted_time = linear_regression_model.predict(sentence_vector)
+    return predicted_time[0]
+    # return np.array([1])
 
 @app.get("/")
 async def root():
