@@ -1,3 +1,10 @@
+# Distributed Memory Priority Queue for Query Processing in Large Language Models
+
+# Description
+Designed a distributed memory system to enhance query response times for LLMs, reducing reliance on slow disk operations.
+System architecture comprises of 3 slaves maintaining independent query queues, and 1 master distributing incoming queries.
+Used a linear regression model to predict query execution times, enabling the master server to select and send the top queries to the GPT-2 server for processing and response generation.
+
 # Installation
 
 Run `./bin/install.sh` script to create the conda env with the requierements. It will create a conda env called `dist_mem_queue`.
